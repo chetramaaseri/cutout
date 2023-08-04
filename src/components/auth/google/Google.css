@@ -1,0 +1,11 @@
+.googleSignup {
+    padding: 20px;
+    gap: 8px;
+    width: 320px;
+    background: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 16px -2px;
+    border-radius: 24px;
+}
+.googleSignup .feature{
+    width: 90px;
+}
