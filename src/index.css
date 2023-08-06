@@ -10,7 +10,9 @@ body {
 }
 :root{
   --primary-color : rgb(102, 51, 255);
+  --secondary-color : rgb(226, 90, 255);
   --color-1: #eee;
+  --heading-size:60px;
 
 }
 .btn-theme{
@@ -33,4 +35,15 @@ body {
 }
 .text-primary{
   color: var(--primary-color);
+}
+.gradient-text{
+  background: linear-gradient(90deg, rgba(226,90,255,1) 27%, rgba(83,40,212,1) 98%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media (max-width:720px) {
+  :root{
+    --heading-size:45px;
+  
+  }
 }

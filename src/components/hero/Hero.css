@@ -1,0 +1,22 @@
+.siteTitle{
+    font-size: var(--heading-size);
+    font-weight: 600;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.siteTitle span {
+    margin: 0 10px 0 10px;
+}
+.siteSubTitle{
+    font-size: 35px;
+    font-weight: 500;
+}
+@media (max-width:720px) {
+    .siteSubTitle{
+        font-size: 25px;
+    }
+
+}
