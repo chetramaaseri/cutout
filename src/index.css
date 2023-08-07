@@ -13,6 +13,7 @@ body {
   --secondary-color : rgb(226, 90, 255);
   --color-1: #eee;
   --heading-size:60px;
+  --sub-heading-size:45px;
 
 }
 .btn-theme{

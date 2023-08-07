@@ -2,7 +2,7 @@ import UrlShortner from "../urlshortner/UrlShortner"
 import "./Hero.css"
 function Hero() {
   return (
-    <div className="container-fluid">
+    <section className="container-fluid">
         <div className="row">
             <div className="col-lg-6 m-auto">
                 <h1 className="siteTitle gradient-text">
@@ -20,7 +20,7 @@ function Hero() {
                 <UrlShortner/>
             </div>
         </div>
-    </div>
+    </section>
   )
 }
 
