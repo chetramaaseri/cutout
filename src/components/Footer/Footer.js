@@ -1,5 +1,4 @@
-import React from 'react'
-
+import {Link} from "react-router-dom"
 function Footer() {
   return (
     <div className='container-fluid bg-dark'>
@@ -9,33 +8,33 @@ function Footer() {
                     <div className="col-6 col-sm-2">
                         <h5 className='text-white'>Section</h5>
                         <ul className="nav flex-column">
-                            <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Home</a></li>
-                            <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Features</a></li>
-                            <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Pricing</a></li>
-                            <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">FAQs</a></li>
-                            <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">About</a></li>
+                            <li className="nav-item mb-2"><Link to="#" className="nav-link p-0 text-muted">Home</Link></li>
+                            <li className="nav-item mb-2"><Link to="#" className="nav-link p-0 text-muted">Features</Link></li>
+                            <li className="nav-item mb-2"><Link to="#" className="nav-link p-0 text-muted">Pricing</Link></li>
+                            <li className="nav-item mb-2"><Link to="#" className="nav-link p-0 text-muted">FAQs</Link></li>
+                            <li className="nav-item mb-2"><Link to="#" className="nav-link p-0 text-muted">About</Link></li>
                         </ul>
                     </div>
 
                     <div className="col-6 col-sm-2">
                         <h5 className='text-white'>Section</h5>
                         <ul className="nav flex-column">
-                            <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Home</a></li>
-                            <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Features</a></li>
-                            <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Pricing</a></li>
-                            <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">FAQs</a></li>
-                            <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">About</a></li>
+                            <li className="nav-item mb-2"><Link to="#" className="nav-link p-0 text-muted">Home</Link></li>
+                            <li className="nav-item mb-2"><Link to="#" className="nav-link p-0 text-muted">Features</Link></li>
+                            <li className="nav-item mb-2"><Link to="#" className="nav-link p-0 text-muted">Pricing</Link></li>
+                            <li className="nav-item mb-2"><Link to="#" className="nav-link p-0 text-muted">FAQs</Link></li>
+                            <li className="nav-item mb-2"><Link to="#" className="nav-link p-0 text-muted">About</Link></li>
                         </ul>
                     </div>
 
                     <div className="col-6 col-sm-2">
                         <h5 className='text-white'>Section</h5>
                         <ul className="nav flex-column">
-                            <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Home</a></li>
-                            <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Features</a></li>
-                            <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Pricing</a></li>
-                            <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">FAQs</a></li>
-                            <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">About</a></li>
+                            <li className="nav-item mb-2"><Link to="#" className="nav-link p-0 text-muted">Home</Link></li>
+                            <li className="nav-item mb-2"><Link to="#" className="nav-link p-0 text-muted">Features</Link></li>
+                            <li className="nav-item mb-2"><Link to="#" className="nav-link p-0 text-muted">Pricing</Link></li>
+                            <li className="nav-item mb-2"><Link to="#" className="nav-link p-0 text-muted">FAQs</Link></li>
+                            <li className="nav-item mb-2"><Link to="#" className="nav-link p-0 text-muted">About</Link></li>
                         </ul>
                     </div>
 
