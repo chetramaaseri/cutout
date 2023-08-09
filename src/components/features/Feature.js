@@ -1,7 +1,7 @@
 import "./Feature.css";
-function Feature({icon,feature}) {
+function Feature({animationAos,icon,feature}) {
   return (
-    <div className='feature'>
+    <div data-aos={animationAos} className='feature'>
         <span className="icon"><img className="h-100 w-100" src={icon} alt="analytics" /></span>
         <span className="featureName">{feature}</span>
     </div>

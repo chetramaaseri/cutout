@@ -1,3 +1,3 @@
 window.env = {
-  "BASE_URL": "cutout.sh"
+  "BASE_URL": "https://cutout.sh/"
 };

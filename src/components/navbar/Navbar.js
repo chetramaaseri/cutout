@@ -1,9 +1,20 @@
+import { useEffect, useState } from "react";
 import LogoColor from "../logos/LogoColor";
 import { AiOutlineBars } from "react-icons/ai";
 function Navbar() {
+    const [navStyle,setNavStyle] = useState("navbar navbar-expand-lg sticky-top");
+    useEffect(()=>{
+        window.addEventListener('scroll',()=>{
+            if(window.scrollY < 50){
+                setNavStyle("navbar navbar-expand-lg sticky-top");
+            }else{
+                setNavStyle("navbar navbar-expand-lg sticky-top bg-light shadow");
+            }
+        })
+    },[])
   return (
-    <nav className="navbar navbar-expand-lg">
-        <div className="container-fluid">
+    <nav className={navStyle}>
+        <div className="container">
             <div className="navbar-brand">
                 <LogoColor/>
             </div>
