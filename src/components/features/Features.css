@@ -1,0 +1,12 @@
+.features {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.featuresTitle{
+    font-size: var(--sub-heading-size);
+    font-weight: 600;
+    margin-bottom: 25px;
+}

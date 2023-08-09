@@ -1,0 +1,94 @@
+.longUrlInputBox{
+    background-image: url("../../images/urlshortner-bg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 300px;
+    background-position: center center;
+    margin-top: 50px;
+}
+
+.longUrlInputBox .inputbox {
+    height: 70px;
+    width: 65%;
+    margin: -20px auto 0 auto;
+    border-radius: 10px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    position: relative;
+}
+.longUrlInputBox .longUrlInput{
+    border: none;
+    outline: none;
+    background: transparent;
+    height: 100%;
+    width: 80%;
+}
+.inputbox:focus-within{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.shortLinkBox {
+    background: #fff;
+    width: 70%;
+    margin: 50px auto 0 auto;
+    padding: 15px 20px;
+    border-radius: 20px;
+}
+.shortLinkBox .copied{
+    color: #37c137;
+}
+.linkCopyBox {
+    min-height: 45px;
+    display: flex;
+    align-items: center;
+    gap: 2%;
+    justify-content: center;
+}
+
+.linkCopyBox .shortUrl {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 20px;
+    align-items: center;
+    background: #eee;
+    border-radius: 10px;
+    height: 50px;
+    width: 79%;
+}
+.linkCopyBox .copyBtn{
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+    gap: 5px;
+    font-weight: 500;
+    align-items: center;
+    background: #eee;
+    border-radius: 10px;
+    height: 50px;
+    width: 29%;
+    cursor: pointer;
+}
+
+@media (max-width:720px) {
+    .longUrlInputBox .inputbox{
+        width: 100%;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+    .shortLinkBox {
+        width: 100%;
+        padding: 15px 10px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+    .linkCopyBox{
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .linkCopyBox .shortUrl {
+        width: 100%;
+    }
+    .linkCopyBox .copyBtn{
+        width: 100%;
+    }
+}

@@ -1,0 +1,22 @@
+.feature {
+    border: 1px solid #eee;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    height: 200px;
+    width: 280px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.feature .icon{
+    height: 80px;
+    width: 80px;
+}
+
+.featureName {
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+}

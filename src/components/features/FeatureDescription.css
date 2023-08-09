@@ -1,0 +1,8 @@
+.featureDescription .featureTitle{
+    font-size: var(--sub-heading-size);
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+.featureDescription .vector{
+    height: 300px;
+}
