@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import LogoColor from "../logos/LogoColor";
 import { AiOutlineBars } from "react-icons/ai";
 function Navbar() {
@@ -24,16 +25,16 @@ function Navbar() {
             <div className="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                 <ul className="navbar-nav gap-3">
                     <li className="nav-item">
-                        <a className="nav-link active" aria-current="page" href="#">Home</a>
+                        <Link className="nav-link active" aria-current="page" to="#">Home</Link>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#">Features</a>
+                        <Link className="nav-link" to="#">Features</Link>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link btn btn-theme px-4" href="#">Login</a>
+                        <Link className="nav-link btn btn-theme px-4" to={"/auth"}>Login</Link>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link btn btn-theme-2 px-4" href="#">Signup</a>
+                        <Link className="nav-link btn btn-theme-2 px-4" to={"/auth"}>Signup</Link>
                     </li>
                 </ul>
             </div>

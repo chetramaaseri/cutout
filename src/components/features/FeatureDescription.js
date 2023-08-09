@@ -1,7 +1,7 @@
 import "./FeatureDescription.css"
 function FeatureDescription({alignment,content,vector}) {
-    const left = (alignment == "left") ? "col-md-6" : "col-md-6 order-md-1";
-    const right = (alignment == "left") ? "col-md-6" : "col-md-6 order-md-0";
+    const left = (alignment === "left") ? "col-md-6" : "col-md-6 order-md-1";
+    const right = (alignment === "left") ? "col-md-6" : "col-md-6 order-md-0";
   return (
     <section className="container-fluid featureDescription">
         <div className="row mt-5">
