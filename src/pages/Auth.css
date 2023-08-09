@@ -1,0 +1,16 @@
+.authPage{
+    background-image: url("../images/auth-bg.png");
+    height: 100vh;
+}
+.centerContainer{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.authContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
