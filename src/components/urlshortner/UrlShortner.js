@@ -1,6 +1,4 @@
 import { useEffect, useState } from "react";
-import AOS from "aos";
-import 'aos/dist/aos.css';
 import { AiOutlineCopy } from "react-icons/ai";
 import { FcApproval } from "react-icons/fc";
 import env from "react-dotenv";
@@ -35,7 +33,6 @@ function UrlShortner() {
             })
         });
         const route = await response.json();
-        // document.querySelector('.shortUrl').innerHTML = env.BASE_URL+route.route;
         setShortUrl(env.BASE_URL+route.route);
         document.querySelector('.shortLinkBox').classList= "shortLinkBox aos-init";
         
