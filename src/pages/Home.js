@@ -14,10 +14,8 @@ function Home() {
 
   useEffect(() => {
     AOS.init({
-      offset: 0,
       duration: 500,
       easing: 'ease-in-sine',
-      delay: 100,
     });
   }, []);
   const descriptionContent ={
