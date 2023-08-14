@@ -41,7 +41,8 @@
   },
   "react-dotenv": {
     "whitelist": [
-      "BASE_URL"
+      "BASE_URL",
+      "API_URL"
     ]
   }
 }
