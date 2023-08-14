@@ -1,19 +1,42 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import {createBrowserRouter,RouterProvider} from "react-router-dom";
+import {createBrowserRouter,RouterProvider,Outlet} from "react-router-dom";
 import './index.css';
 import reportWebVitals from './reportWebVitals';
+import Navbar from "./components/navbar/Navbar"
+import Footer from "./components/Footer/Footer"
 import Home from './pages/Home';
 import Auth from './pages/Auth';
+import Routing from './components/routing/Routing';
+
+const AppLayout = ()=>{
+  return(
+    <>
+      <Navbar/>
+      <Outlet/>
+      <Footer/>
+    </>
+  )
+}
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />,
+    element: <AppLayout />,
+    children:[
+      {
+        path: "/",
+        element : <Home/>
+      },
+    ]
   },
   {
     path: "/auth",
     element: <Auth />,
+  },
+  {
+    path: "*",
+    element: <Routing/>,
   },
 ]);
 

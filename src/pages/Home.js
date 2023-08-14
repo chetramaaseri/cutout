@@ -3,14 +3,12 @@ import "aos/dist/aos.css";
 import FeatureDescription from "../components/features/FeatureDescription"
 import Features from "../components/features/Features"
 import Hero from "../components/hero/Hero"
-import Navbar from "../components/navbar/Navbar"
 import analytics from "../images/analytics-vector.svg"
 import unlimitedUse from "../images/infinity-vector.svg"
 import preBuiltTheme from "../images/theme-vector.svg"
 import geo from "../images/geo-vector.svg"
 import prompt from "../images/prompt-vector.svg"
 import device from "../images/device-vector.svg"
-import Footer from "../components/Footer/Footer"
 import { useEffect } from "react";
 function Home() {
 
@@ -50,7 +48,6 @@ function Home() {
   }
   return (
     <>
-      <Navbar/>
       <div className="container">
           <Hero/>
           <Features/>
@@ -61,7 +58,6 @@ function Home() {
           <FeatureDescription alignment={"left"} content={descriptionContent.prompt} vector={prompt} />
           <FeatureDescription alignment={"right"} content={descriptionContent.device} vector={device} />
       </div>
-      <Footer/>
     </>
   )
 }

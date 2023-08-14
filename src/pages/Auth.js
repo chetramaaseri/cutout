@@ -12,13 +12,13 @@ function Auth() {
           <LogoColor/>
         </div>
       </div>
-      <div className="centerContainer">
-        <div className="authContainer">
+      <div className="row mt-2 mt-md-5 pt-5">
+        <div className="authContainer flex-column flex-md-row">
           <Guest/>
           <span className="text-secondary">OR</span>
           <Google/>
         </div>
-        <div className="signIn d-flex align-items-center justify-content-center mt-3 gap-1">
+        <div className="signIn d-flex align-items-center justify-content-center my-3 gap-1">
           <p className="text-primary m-0">Already have an account?</p>
           <Link to="#">Sign in here</Link>
         </div>

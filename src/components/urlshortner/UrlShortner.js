@@ -14,12 +14,30 @@ function UrlShortner() {
         document.querySelector('.copied').classList.remove('d-none');
 
     }
+    const getShortUrl = async()=>{
+        const longUrl = document.getElementById('longUrl').value;
+        if(longUrl === ""){
+            return alert("enter url to shorten");
+        }
+        const url = `${env.API_URL}/generate`;
+        const response = await fetch(url,{
+            method : "POST",
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body : JSON.stringify({
+                longUrl
+            })
+        });
+        const route = await response.json();
+        document.querySelector('.shortUrl').innerHTML = env.BASE_URL+route.route;
+    }
   return (
     <div  className='container-fluid text-center gx-0'>
         <div className="longUrlInputBox">
             <div className="inputbox">
                 <input type="text" id="longUrl" placeholder="Paste long url here" className="longUrlInput" />
-                <button className="btn btn-theme">Shorten</button>
+                <button onClick={getShortUrl} className="btn btn-theme">Shorten</button>
             </div>
             <div  data-aos="flip-up" className="shortLinkBox">
                 <h5 className="d-flex justify-content-between align-items-center">Shorten Url Here <span className="copied d-none">Copied <FcApproval/></span> </h5>
